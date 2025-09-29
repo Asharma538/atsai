@@ -178,7 +178,6 @@ export default function App() {
     reader.readAsDataURL(selectedFile);
     reader.onload = async () => {
       const base64String = String(reader.result).split(",")[1];
-      console.log(base64String);
       console.log("File read successfully, starting evaluation...");
       try {
         const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
@@ -244,14 +243,13 @@ export default function App() {
           console.log("received chunk:", i++);
         }
         const parsedData = JSON.parse(fullResponse.join(""));
-        console.log(parsedData);
         parsedData["score"] = Math.round(
           Object.values(parsedData.checks).filter((c) => c.passed).length *
             (100 / Object.keys(parsedData.checks).length)
         );
 
+        console.log(parsedData);
         setResult(parsedData);
-        // console.log(parsedData);
       } catch (e) {
         console.error(e);
         setError("Failed to analyze resume. Please try again.");
