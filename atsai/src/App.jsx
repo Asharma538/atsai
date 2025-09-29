@@ -209,7 +209,7 @@ export default function App() {
             - For tech stack, look for programming languages, frameworks, tools, databases, cloud platforms, etc.
             - For metrics, look for numbers, percentages, improvements, reductions, etc.
             - Be strict but fair in your evaluation
-            - Include an improvement scope that will benefit the candidate in shortlisting. If it's good enough say "you're good to go!".
+            - Include any improvement scope that will benefit the candidate in shortlisting. If it's good enough also say "you're good to go!".
             - Ongoing roles should be shown similar to “Month YYYY — Present.” Do not validate dates against today's actual calendar date — simply ensure ordering within the resume. Future start dates (e.g., next month) are acceptable if marked correctly.
             - Today's Date: ${new Date().toLocaleDateString()}
         `;
