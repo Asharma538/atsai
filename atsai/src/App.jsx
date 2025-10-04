@@ -278,7 +278,7 @@ export default function App() {
             <p>AI-powered resume evaluation for ATS optimization</p>
           </div>
         </div>
-        <a className="cta-link" href="https://github.com/" target="_blank" rel="noreferrer">Star on GitHub</a>
+        <a className="cta-link" href="https://github.com/Asharma538" target="_blank" rel="noreferrer">Check my GitHub</a>
       </nav>
 
       <header className="hero">
